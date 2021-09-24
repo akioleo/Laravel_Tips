@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('listagem-usuario', 'UserController@ListUser');
+Route::get('usuarios', 'Form\\TestController@listAllUsers')->name('users.listAll');
